@@ -55,7 +55,7 @@
       <section class="hero">
         <div class="container background-div">
           <h1 class="title-main">Эффективные решения для вашего бизнеса</h1>
-          <button class="button-primary" type="button">Заказать услугу</button>
+          <button class="button-primary" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <section class="section">
@@ -121,12 +121,21 @@
                 width="370"
                 height="294"
               />
+              <div class="work-overlay">
+                <p class="work-description">Десктопные приложения</p>
+              </div>
             </li>
             <li class="title-iteam">
               <img src="./images/specialization/spec2.jpg" alt="Планшет" width="370" height="294" />
+              <div class="work-overlay">
+                <p class="work-description">Мобильные приложения</p>
+              </div>
             </li>
             <li class="title-iteam">
               <img src="./images/specialization/spec3.jpg" alt="телефон" width="370" height="294" />
+              <div class="work-overlay">
+                <p class="work-description">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -400,5 +409,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn-close" type="button" data-modal-close>
+          <svg class="icon-modal" width="11" height="11">
+            <use href=".//images/symbol-defs.svg#vectormodal"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
